@@ -1,0 +1,4 @@
+file_loc_csv= "bmw.csv"
+df = spark.read.csv(file_loc_csv, inferSchema=True, header=True)
+print(type(df))
+df.show()
